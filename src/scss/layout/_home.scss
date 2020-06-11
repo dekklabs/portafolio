@@ -1,0 +1,320 @@
+#portada {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .bloq {
+        text-align: center;
+        margin-left: 60px;
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+        .title {
+            color: $primary-light;
+            font-family: $fprimary;
+            font-weight: 700;
+            font-size: 80px;
+            margin-bottom: 0;
+            margin-top: 0;
+            @media (max-width: 991px) {
+                font-size: 50px;
+            }
+        }
+        .description {
+            text-align: center;
+            font-size: 80px;
+            margin: 0;
+            color: #6C929F;
+            font-family: $fprimary;
+            font-weight: 700;
+        }
+    }
+
+    .img {
+        background-image: url("../assets/img/computer.png");
+        background-size: cover;
+        width: 350px;
+        height: 350px;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+    }
+}
+#projects {
+    padding: 60px 0;
+    position: relative;
+    background-color: #f4f2e7;
+    .bloq {
+        width: 750px;
+        margin-left: 60px;
+        @media (max-width: 991px) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        h2 {
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 40px;
+            color: #353940;
+            text-transform: uppercase;
+            margin-left: 60px;
+            @media (max-width: 991px) {
+                font-size: 30px;
+            }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            @media (max-width: 991px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            li {
+                margin-bottom: 30px;
+                .card {
+                    border-radius: 40px;
+                    width: 320px;
+                    height: 320px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+                    transition: 0.4s;
+
+                    &.project1 {
+                        background-image: url("../assets/img/project1.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    &.project2 {
+                        background-image: url("../assets/img/project2.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    &.project3 {
+                        background-image: url("../assets/img/project3.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    &.project4 {
+                        background-image: url("../assets/img/project4.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    &:hover {
+                        transform: scale(0.9, 0.9);
+                        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+                            -5px -5px 30px 15px rgba(0,0,0,0.22);
+                    }
+
+                    h2 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .img {
+        background-image: url("../assets/img/dev.png");
+        background-size: cover;
+        width: 655px;
+        height: 1010px;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: -663px;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+#contact {
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    .bloq {
+        width: 1110px;
+        display: flex;
+        justify-content: center;
+        padding-right: 60px;
+        @media (max-width: 991px) {
+            width: 95%;
+            padding-left: 30px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: "Roboto";
+            font-weight: 700;
+            color: $primary-light;
+            font-size: 40px;
+            margin: 0;
+            text-align: center;
+        }
+        h3 {
+            color: $primary-light;
+            font-family: 'Roboto';
+            font-weight: 400;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            li {
+                margin-right: 10px;
+                a {
+                    svg {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+    .img {
+        background-image: url("../assets/img/computer.png");
+        background-size: cover;
+        width: 455px;
+        height: 455px;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: -96px;
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+}
+#about {
+    padding: 60px 0;
+    background-color: #f4f2e7;
+    position: relative;
+    .bloq {
+        // max-width: 1110px;
+        max-width: 750px;
+        // margin: 0 auto;
+        margin-left: 60px;
+
+        h2 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #353940;
+        }
+
+        h3 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 27px;
+            color: #353940;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 24px;
+            color: #353940;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin-right: 20px;
+            }
+        }
+
+        .framework {
+            .angular {
+                background-image: url("../assets/skills/angular.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+            .react {
+                background-image: url("../assets/skills/react.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+        }
+        .lang {
+            .php {
+                background-image: url("../assets/skills/php.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+            .js {
+                background-image: url("../assets/skills/js.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+            .java {
+                background-image: url("../assets/skills/java.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+            .go {
+                background-image: url("../assets/skills/go.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+        }
+        .repo {
+            .github {
+                background-image: url("../assets/skills/github.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+            .gitlab {
+                background-image: url("../assets/skills/gitlab.png");
+                width: 80px;
+                height: 80px;
+                background-size: cover;
+            }
+        }
+    }
+    .img {
+        background-image: url("../assets/img/skill.png");
+        background-size: cover;
+        width: 527px;
+        height: 941px;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: -150px;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+footer {
+    padding: 20px 0;
+    background-color: #51565F;
+    p {
+        text-align: center;
+        color: $primary-light;
+        font-family: 'Roboto';
+        font-weight: 400;
+    }
+}
