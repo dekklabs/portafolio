@@ -1,7 +1,7 @@
 const path = require("path")
-// @ts-ignore
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin    = require("html-webpack-plugin")
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
     entry : {
@@ -31,7 +31,8 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            outputPath: './images/'
+                            outputPath: './images/',
+                            esModule: false
                         }
                     },
                     {
@@ -64,13 +65,15 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        outputPath: './fonts/'
+                        outputPath: './fonts/',
+                        esModule: false
                     }
                 }]
             }
         ]
     },
     plugins: [
+        new FaviconsWebpackPlugin('favicon.ico'),
         new MiniCssExtractPlugin({
           filename: "app.bundle.css"
         }),
