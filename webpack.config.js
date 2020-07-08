@@ -1,7 +1,6 @@
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin    = require("html-webpack-plugin")
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
     entry : {
@@ -73,7 +72,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new FaviconsWebpackPlugin('favicon.ico'),
         new MiniCssExtractPlugin({
           filename: "app.bundle.css"
         }),
