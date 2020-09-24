@@ -1,0 +1,44 @@
+#portada {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    //background-image: url("../assets/img/bg.jpeg");
+    background: linear-gradient(90deg, #111418, #111418, #20c997);
+
+    h1, span, p {
+        color: #FFF;
+    }
+
+    .pretitle {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .description {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    button {
+        background: transparent;
+        border: 2px solid $secondary;
+        color: $secondary;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: all .4s;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: $secondary;
+            color: #FFF;
+            transition: all .4s;
+        }
+    }
+}

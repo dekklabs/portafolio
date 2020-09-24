@@ -1,0 +1,46 @@
+.sidebar {
+    height: 100vh;
+    background-color: $bg-dark;
+    padding: 20px;
+    position: fixed;
+    width: 225.16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .profile-img {
+        border: 8px solid $texto;
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile-name {
+        text-align: center;
+    }
+
+    ul {
+        li {
+            a {
+                display: block;
+                text-align: center;
+                padding: 15px;
+                color: white;
+                text-decoration: none;
+                transition: all .2s;
+                cursor: pointer;
+                &.active {
+                    color: $secondary;
+                }
+                &:hover {
+                    color: $secondary;
+                    transition: all .2s;
+                }
+            }
+            svg {
+                width: 40px;
+            }
+        }
+    }
+}
