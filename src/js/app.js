@@ -38,8 +38,6 @@ export class Home {
         const resumenbtn = document.getElementById("resumenbtn")
         const myworkbtn = document.getElementById("myworkbtn")
 
-        console.log(mywork)
-
         window.addEventListener("scroll", () => {
             let scroll = window.scrollY
             if( scroll ==  portada ) {
