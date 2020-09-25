@@ -19,6 +19,9 @@
 
     .title {
         font-size: 60px;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
     }
 
     .description {

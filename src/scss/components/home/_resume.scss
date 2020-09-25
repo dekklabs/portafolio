@@ -3,6 +3,18 @@
     padding: 60px;
     background-color: #f8f9fa;
 
+    @media (max-width: 991px) {
+        height: auto;
+    }
+
+    @media (max-width: 575px) {
+        padding: 60px 20px;
+
+        .pr-3 {
+            padding-right: 0 !important;
+        }
+    }
+
     .timeline {
         padding: 0;
         background-color: $secondary;

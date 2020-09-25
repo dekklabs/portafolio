@@ -2,6 +2,13 @@
     height: 100vh;
     background-color: #FFF;
     padding: 60px;
+    @media (max-width: 991px) {
+        height: auto;
+    }
+
+    @media (max-width: 575px) {
+        padding: 20px;
+    }
 
     .bloq-title {
         margin-bottom: 90px;

@@ -8,19 +8,48 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 991px) {
+        position: initial;
+        height: auto;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .bloq {
+        @media (max-width: 991px) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
     .profile-img {
+        background-image: url("../images/profile.jpg");
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
         border: 8px solid $texto;
         border-radius: 50%;
         margin: 0 auto;
         width: 160px;
         height: 160px;
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
 
     .profile-name {
         text-align: center;
+        @media (max-width: 991px) {
+            margin-bottom: 0 !important;
+        }
     }
 
     ul {
+        @media (max-width: 991px) {
+            display: flex;
+            margin-bottom: 0 !important;
+        }
         li {
             a {
                 display: block;
