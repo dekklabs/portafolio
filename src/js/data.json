@@ -1,0 +1,23 @@
+[
+    {
+        "id" : "1",
+        "name" : "Arnolds Burgers",
+        "tech" : [
+            {
+                "name_tech" : "wordpress"
+            },
+            {
+                "name_tech" : "html5"
+            },
+            {
+                "name_tech" : "scss"
+            },
+            {
+                "name_tech" : "javascript"
+            },
+            {
+                "name_tech" : "fusebox"
+            }
+        ]
+    }
+]

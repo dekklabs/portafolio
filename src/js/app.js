@@ -1,7 +1,7 @@
 export class Home {
     constructor() {
         this.scrollMovement();
-        this.activeNav()
+        this.activeNav();
     }
     scrollMovement() {
         this.moveScroll("down", "aboutme")
@@ -63,6 +63,15 @@ export class Home {
                 resumenbtn.classList.remove("active")
                 myworkbtn.classList.add("active")
             }
+        })
+    }
+
+    modalMyWork() {
+        const project = document.getElementById("project1")
+        const modal = document.getElementById("modalProject")
+        project.addEventListener("click", () => {
+            modal.classList.add("show")
+            modal.classList.add("activemodal")
         })
     }
 }
