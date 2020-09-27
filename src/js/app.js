@@ -1,7 +1,13 @@
 export class Home {
     constructor() {
+        /*this.modal      = document.getElementById("modalProject");
+        this.modalBody  = document.querySelectorAll(".modal-body")*/
+
         this.scrollMovement();
         this.activeNav();
+
+        /*this.modalMyWork();
+        this.closeModal()*/
     }
     scrollMovement() {
         this.moveScroll("down", "aboutme")
@@ -66,12 +72,52 @@ export class Home {
         })
     }
 
+/*
     modalMyWork() {
-        const project = document.getElementById("project1")
-        const modal = document.getElementById("modalProject")
-        project.addEventListener("click", () => {
-            modal.classList.add("show")
-            modal.classList.add("activemodal")
-        })
+        const __self = this;
+
+        const box = document.querySelectorAll(".box")
+        
+        for( let i = 0; i < box.length; i++ ) {
+            let res = box[i]
+            res.addEventListener('click', () => {
+                this.modal.classList.add("show")
+                this.modal.classList.add("activemodal")
+                __self.openModalBody(res)
+            })
+        }
     }
+
+    openModalBody(res) {
+        let __self = this
+        if( res ) {
+            let id = res.getAttribute("class").split(" ")[2]
+            
+            let resData = __self.getProject(id)
+            __self.modalBodyFunc(resData)
+        }
+    }
+    
+    getProject(id) {
+        let resData = data.find( data => data.id === id )
+        return resData
+    }
+
+    closeModal() {
+        const close = document.querySelector(".close")
+        if( close ) {
+            close.addEventListener("click", () => {
+                this.modal.classList.remove("show")
+                this.modal.classList.remove("activemodal")
+            })
+        }
+    }
+
+    modalBodyFunc({ name, tech }) {
+        console.log(name)
+        this.modalBody.innerHTML = `
+            <h3>${name}</h3>
+        `
+    }
+*/
 }
