@@ -49,19 +49,43 @@ export class Modal {
         return resData
     }
 
-    modalBodyFunc({ name, tech, description, image, width }) {
-        console.log(width)
+    modalBodyFunc({ name, tech, description, image, github, date, url }) {
         this.modalBody.innerHTML = `
         <div class="row">
+            <div class="col-lg-12 mb-2">
+                <h2 class="f--poppins fw--600 text-white text-center">Name: ${name}</h2>
+            </div>
             <div class="col-lg-6">
                 <div class="text-center">
-                    <img class="" width=${width} src="${image}" alt="${name}" >
+                    <img src="${image}" alt="${name}" >
                 </div>
             </div>
             <div class="col-lg-6">
-                <h2 class="f--poppins fw--600 text-white">Name: ${name}</h2>
-                <p  class="f--poppins fw--400 text-white">Description: ${description}</p>
-                <p  class="f--poppins fw--400 text-white">Tecnology: ${tech}</p>
+                <div class="bloq">
+                    <h3 class="f--poppins fw--600 text-white">Info Project:</h3>
+                    <p  class="f--poppins fw--400 text-white">Description: ${description}</p>
+                    <hr>
+                    <h3 class="f--poppins fw--600 text-white mb-4">Project Details:<h3>
+                    <div class="d-flex align-items-center">
+                        <h4 class="f--poppins fw--600 text-white mr-2">Technology: </h4>
+                        <p  class="f--poppins fw--400 text-white tech">${tech}</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <h4 class="f--poppins fw--600 text-white mr-2">Repositorio: </h4>
+                        <a class="f--poppins fw--400 text-white" href="${github !== "sin repositorio" ? github : "#"}" target="_blank" rel="noopener noreferrer">${github}</a>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <h4 class="f--poppins fw--600 text-white mr-2">Date: </h4>
+                        <p  class="f--poppins fw--400 text-white tech">${date}</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <h4 class="f--poppins fw--600 text-white mr-2">URL: </h4>
+                        <a class="f--poppins fw--400 text-white" href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>
+                    </div>
+                </div>
             </div>
         </div>
         `

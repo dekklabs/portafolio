@@ -3,38 +3,54 @@
 
     .modal-dialog {
         max-width: 90%;
-        height: 100%;
         margin-top: 0;
         display: flex;
         align-items: center;
     }
 
+    div[class^="col-l"] {
+        padding: 20px;
+    }
+
     .modal-body {
-        background: linear-gradient(90deg, #20c997, #111418, #111418);
+        background: linear-gradient(90deg, #20c997, #4575b4, #084da8);
     }
 
     .modal-content {
         position: relative;
-        border-radius: 10px;
         overflow: hidden;
         background-color: #222;
+        margin-top: 20px;
 
         img {
+            border-radius: 5px;
+            width: 100%;
             height: auto;
-            border-radius: 10px;
             margin: 0 auto;
+            box-shadow: 13px 20px 3px #000000ab;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .tech, a {
+            font-size: 16px;
+            margin-bottom: 0;
         }
 
         .close {
-            border: 1px solid #222;
+            border: 2px solid #FFF;
             position: absolute;
             right: 0;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             z-index: 999;
             outline: none;
             transition: all .3s;
+            color: #FFF;
             &:hover {
                 transition: all .3s;
                 background-color: #222;
