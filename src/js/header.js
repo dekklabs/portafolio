@@ -18,7 +18,6 @@ export class Header {
         for( let i =0; i < navbar.length; i++ ) {
             let item = navbar[i]
             item.addEventListener("click", () => {
-                console.log(item)
                 this.bars.click()
             })
         }

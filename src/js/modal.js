@@ -55,12 +55,12 @@ export class Modal {
             <div class="col-lg-12 mb-2">
                 <h2 class="f--poppins fw--600 text-white text-center">Name: ${name}</h2>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6 col-md-6 col-lg-6 left">
                 <div class="text-center">
                     <img src="${image}" alt="${name}" >
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6 col-md-6 col-lg-6 right">
                 <div class="bloq">
                     <h3 class="f--poppins fw--600 text-white">Info Project:</h3>
                     <p  class="f--poppins fw--400 text-white">Description: ${description}</p>
