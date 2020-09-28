@@ -8,8 +8,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import { Home } from "./js/app";
 import { Modal } from "./js/modal"
+import { PortadaAnimation } from './js/PortadaAnimation';
 
 document.addEventListener("DOMContentLoaded", () => {
-    let home = new Home()
-    let modal = new Modal()
+    let home    = new Home();
+    let modal   = new Modal();
+    let portada = new PortadaAnimation();
 })
