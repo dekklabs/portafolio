@@ -44,6 +44,9 @@
         @media (max-width: 991px) {
             text-align: center;
         }
+        @media (max-width: 575px) {
+            font-size: 30px;
+        }
     }
 
     .description {
