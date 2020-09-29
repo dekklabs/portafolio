@@ -6,10 +6,10 @@
 
 Use the following technologies
 
-- [Webpack]
-- [Javascript]
-- [Sass]
-- [Html]
+* [Webpack] - 
+* [Javascript] -
+* [Sass] -
+* [Html] -
 
 ### Instalation
 
