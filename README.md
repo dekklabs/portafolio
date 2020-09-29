@@ -6,7 +6,7 @@
 
 Use the following technologies
 
-* [Webpack] - 
+* [Webpack] - webpack
 * [Javascript] -
 * [Sass] -
 * [Html] -
