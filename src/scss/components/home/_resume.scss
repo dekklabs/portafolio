@@ -1,5 +1,5 @@
 #resume {
-    height: 100vh;
+    //height: 100vh;
     padding: 60px;
     background-color: #f8f9fa;
 
@@ -26,7 +26,23 @@
         margin-bottom: 20px;
     }
 
+    .bloq-title {
+        margin-bottom: 90px;
+        position: relative;
+        height: 130px;
+    }
+
+    .title-bloq-sub {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
     .title {
         color: $texto;
+        text-align: center;
     }
 }

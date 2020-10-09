@@ -1,5 +1,5 @@
 #aboutme {
-    height: 100vh;
+    //height: 100vh;
     background-color: #FFF;
     padding: 60px;
     @media (max-width: 991px) {
@@ -12,12 +12,24 @@
 
     .bloq-title {
         margin-bottom: 90px;
+        position: relative;
+        height: 130px;
+    }
+
+    .title-bloq-sub {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 2;
     }
 
     .title {
         text-align: center;
         font-size: 40px;
         color: $texto;
+        //margin: 0 auto;
     }
     .line {
         width: 80px;
@@ -60,6 +72,8 @@
             }
         }
         .bloq-descriptions {
+            cursor: pointer;
+            transition: all .3s;
             h3 {
                 text-align: center;
                 color: $texto2;
@@ -77,6 +91,10 @@
                 top: 0;
                 left: -1px;
                 border-left: 1px dotted #b6b1b1;
+            }
+            &:hover {
+                background-color: #22222209;
+                transition: all .3s;
             }
         }
     }
