@@ -31,4 +31,15 @@ body::-webkit-scrollbar-thumb
 	font-weight: bold;
 	color: #dee3e459;
 	z-index: 1;
+	@media (max-width: 757px) {
+		font-size: 60px;
+		top: 5px;
+	}
+	@media (max-width: 575px) {
+		font-size: 30px;
+	}
+}
+
+main {
+	overflow: hidden;
 }

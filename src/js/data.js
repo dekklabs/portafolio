@@ -2,7 +2,7 @@ const data = [
     {
         "id" : "project1",
         "name" : "Arnolds Burgers",
-        "tech" : "wordpress, html5, scss, javascript, fusebox",
+        "tech" : "privado",
         "description" : "Página creada para venta de hamburguesas",
         "image" : "images/project0.png",
         "github": "sin repositorio",
@@ -22,7 +22,7 @@ const data = [
     {
         "id": "project3",
         "name": "Cocinas Ocultas",
-        "tech": "webpack, javascript, sass, wordpress",
+        "tech" : "privado",
         "description": "Cocinas Ocultas Perú es un proyecto desarrollado por Damian Ode Jamis, Director de Marketing y creador de innovadores conceptos Gastronómicos.",
         "image": "images/project6.png",
         "github": "sin repositorio",
@@ -32,7 +32,7 @@ const data = [
     {
         "id": "project4",
         "name": "Del Carajo",
-        "tech": "webpack, wordpress, javascript, sass",
+        "tech" : "privado",
         "description": "Página creada para un restaurante de pollo a la braza",
         "image": "images/project7.png",
         "github": "sin repositorio",
@@ -42,7 +42,7 @@ const data = [
     {
         "id": "project5",
         "name": "RVK",
-        "tech": "webpack, wordpress, javascript, sass",
+        "tech" : "privado",
         "description": "Página creada un cliente",
         "image": "images/project8.png",
         "github": "sin repositorio",
@@ -52,7 +52,7 @@ const data = [
     {
         "id": "project6",
         "name": "Be Safe",
-        "tech": "webpack, wordpress, javascript, sass",
+        "tech" : "privado",
         "description": "Página de venta de mascarillas",
         "image": "images/project9.png",
         "github": "sin repositorio",
@@ -62,7 +62,7 @@ const data = [
     {
         "id": "project7",
         "name": "Proyecto venta de sillas",
-        "tech": "wordpress, javascript, sass",
+        "tech" : "privado",
         "description": "Página de venta de sillas",
         "image": "images/project10.png",
         "github": "sin repositorio",
@@ -72,7 +72,7 @@ const data = [
     {
         "id": "project8",
         "name": "Sonambulos",
-        "tech": "wordpress, javascript, sass, webpack",
+        "tech" : "privado",
         "description": "Página creada para una productora audiovisual",
         "image": "images/project11.png",
         "github": "sin repositorio",
@@ -82,7 +82,7 @@ const data = [
     {
         "id": "project9",
         "name": "EuroRack",
-        "tech": "wordpress, javascript, sass, fusebox",
+        "tech" : "privado",
         "description": "Página creada para empresa de soporte de tecnologías informáticas",
         "image": "images/project12.png",
         "github": "sin repositorio",
