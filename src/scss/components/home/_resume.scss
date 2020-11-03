@@ -26,10 +26,22 @@
         margin-bottom: 20px;
     }
 
+    .line {
+        width: 80px;
+        border: 1px solid $secondary;
+        border-color: $secondary;
+        border-width: 2px;
+        display: block;
+        margin: 0 auto;
+    }
+
     .bloq-title {
         margin-bottom: 90px;
         position: relative;
         height: 130px;
+        @media (max-width: 575px) {
+            height: auto;
+        }
     }
 
     .title-bloq-sub {
@@ -39,6 +51,9 @@
         right: 0;
         margin: 0 auto;
         z-index: 2;
+        @media (max-width: 575px) {
+            position: relative;
+        }
     }
 
     .title {

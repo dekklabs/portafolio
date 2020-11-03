@@ -31,4 +31,17 @@ body::-webkit-scrollbar-thumb
 	font-weight: bold;
 	color: #dee3e459;
 	z-index: 1;
+	@media (max-width: 991px) {
+		font-size: 80px;
+		top: -5px;
+	}
+	@media (max-width: 575px) {
+		font-size: 60px;
+		top: 10px;
+	}
+	@media (max-width: 410px) {
+		// font-size: 40px;
+		// top: -5px;
+		display: none;
+	}
 }

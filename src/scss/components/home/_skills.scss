@@ -1,0 +1,59 @@
+.skills {
+    padding: 60px;
+
+    .bloq-title {
+        margin-bottom: 90px;
+        position: relative;
+        height: 130px;
+        .title-bloq-sub {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 2;
+            
+            .title {
+                text-align: center;
+                color: $texto;
+            }
+            .line {
+                width: 80px;
+                border: 1px solid #20c997;
+                border-color: #20c997;
+                border-width: 2px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .bloq-skills {
+        border: 2px solid red;
+        .verde {
+            color: $secondary;
+        }
+        .dot {
+            color: #222;
+            opacity: .4;
+        }
+        span {
+            word-break: break-all;
+        }
+        pre {
+            counter-reset: line;
+            .codigo {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 400;
+                &:before {
+                    counter-increment: line;
+                    content: counter(line);
+                    display: inline-block;
+                    border-right: 1px solid #DDD;
+                    padding: 0 .5em;
+                    margin-right: .5em;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
