@@ -10,10 +10,12 @@ import { Home } from "./js/app";
 import { Modal } from "./js/modal"
 import { PortadaAnimation } from './js/PortadaAnimation';
 import { Header } from "./js/header";
+import { ProgressBar } from "./js/progressbar";
 
 document.addEventListener("DOMContentLoaded", () => {
     let home    = new Home();
     let modal   = new Modal();
     let portada = new PortadaAnimation();
     let header  = new Header();
+	let progress = new ProgressBar();
 })

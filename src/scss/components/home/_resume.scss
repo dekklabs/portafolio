@@ -60,4 +60,24 @@
         color: $texto;
         text-align: center;
     }
+	#skillsection {
+		.skills {
+			width: 95%;
+			background-color: lightgray;
+			border-radius: 20px;
+		}
+		.progress-done {
+			height: 100%;
+			opacity: 0;
+			width: 0;
+			background: linear-gradient(to left, $secondary, #108864);
+			color: #FFF;
+			border-radius: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 3px 3px -5px $secondary, 0 2px 5px $secondary;
+			transition: 1s ease;
+		}
+	}
 }

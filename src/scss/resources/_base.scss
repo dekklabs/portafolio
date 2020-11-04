@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb
 	font-weight: bold;
 	color: #dee3e459;
 	z-index: 1;
-<<<<<<< HEAD
 	@media (max-width: 991px) {
 		font-size: 80px;
 		top: -5px;
@@ -45,7 +44,6 @@ body::-webkit-scrollbar-thumb
 		// top: -5px;
 		display: none;
 	}
-=======
 	@media (max-width: 757px) {
 		font-size: 60px;
 		top: 5px;
@@ -57,5 +55,4 @@ body::-webkit-scrollbar-thumb
 
 main {
 	overflow: hidden;
->>>>>>> 6206ffd8f980af59c882ac948935d42ab896f401
 }
