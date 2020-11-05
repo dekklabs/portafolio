@@ -44,6 +44,12 @@
         }
     }
 
+	.right {
+		@media (max-width: 575px) {
+			margin-top: 20px;
+		}
+	}
+
     .title-bloq-sub {
         position: absolute;
         top: 40px;
